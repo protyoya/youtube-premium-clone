@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>youtube clone</title>
+
+    <link rel="stylesheet" href="youtubevideos.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header starts -->
+    <header class="header">
+      <div class="header_container">
+        <div class="menu">
+          <button onclick="unhideDiv()" class="btn"><i class="fa-solid fa-bars" id="headeree"></i></button>
+          <a href="#" class="icon_logo">
+            <span class="logo_name">
+              <i class="fab fa-youtube" id="youtube"> </i>
+            </span>
+          </a>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <i class="fa-solid fa-microphone" style="color: #b1b6be;" id="mic"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="user">
+          <div class="icon">
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          
+          <div class="img">
+            <button onclick="dropdiv()" class="open">
+            <img
+              src="https://th.bing.com/th/id/OIP.Vy5PUdCk1nZpeE31MCa1pwHaHa?rs=1&pid=ImgDetMain"
+              alt="" class="dabt"
+            />
+          </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header ends -->
+    <!--  side bar starts-->
+    <div class="body-container">
+      <div class="side" >
+        <div class="side-items">
+          <a href="#" class="side-item">
+            <i class="fa-solid fa-house" style="color: white;" class="icon-item"></i>
+          <div class="flex"><span>Home</span></div></a>
+        </div>
+        <div class="side-items">
+          <a href="#" class="side-item">
+            <i class="fa-solid fa-record-vinyl" style="color: white;" class="icon-item"></i>
+          
+          <div class="flex"><span>Shorts</span></div></a>
+        </div>
+        <div class="side-items">
+          <a href="#" class="side-item">
+            <i class="fa-solid fa-bookmark" style="color: white;" class="icon-item"></i>
+          
+          <div class="flex"><span>Subscriptions</span></div></a>
+        </div>
+        <div class="side-items">
+          <a href="#" class="side-item">
+            <i class="fa-solid fa-circle-play" style="color: white;" class="icon-item"></i>
+          <div class="flex"><span>YouTube</span></div></a>
+        </div>
+        <div class="side-items">
+          <a href="#" class="side-item">
+            <i class="fa-solid fa-bookmark" style="color: white;" class="icon-item"></i>
+          
+          <div class="flex"><span>Library</span></div></a>
+        </div>
+        <div class="side-items">
+          <a href="#" class="side-item">
+            <i class="fa-solid fa-arrow-up-from-bracket" style="color: white;" class="icon-item"></i>
+          
+          <div class="flex"><span>Downloads</span></div></a>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar-items">
+          <a href="#" class="sidebar-item home">
+            <!-- <i class="fa-solid fa-house" style="color: #dbd1d1"></i> -->
+            <span class="material-symbols-outlined icons">
+              home
+              </span>
+            <span class="side-bar-extra">Home</span></a
+          >
+          <a href="#" class="sidebar-item">
+            <!-- <i class="fa-regular fa-circle-play" style="color: #d8dce4;"></i> -->
+            <span class="material-symbols-outlined icons">
+              eject
+              </span>
+            <span class="side-bar-extra">Shorts</span></a
+          >
+          <a href="#" class="sidebar-item">
+            <!-- <i
+              class="fa-solid fa-square-caret-up fa-rotate-90"
+              style="color: #c7ccd6"
+            ></i> -->
+            <span class="material-symbols-outlined icons">
+              library_music
+              </span>
+            <span class="side-bar-extra">Subscriptions</span></a
+          >
+          <a href="#" class="sidebar-item">
+            <!-- <i class="fa-solid fa-circle-play" style="color: #cbd0d7"></i> -->
+            <span class="material-symbols-outlined icons">
+              play_circle
+              </span>
+            <span class="side-bar-extra">Youtube Music</span></a
+          >
+
+          <hr>
+
+          <a href="#" class="sidebar-item">
+            <!-- <i class="fa-regular fa-clock" style="color: #c1c5cd;"></i> -->
+            <span class="material-symbols-outlined icons">
+              library_music
+              </span>
+            <span>Library</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <!-- <i class="fa-regular fa-clock" style="color: #c1c5cd;"></i> -->
+            <span class="material-symbols-outlined icons">
+              history
+              </span>
+            <span>History</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <!-- <i class="fa-solid fa-square-plus" style="color: #cbced2;"></i> -->
+            <span class="material-symbols-outlined icons">
+              smart_display
+              </span>
+            <span>Your Videos</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <!-- <i class="fa-regular fa-clock" style="color: #c1c5cd;"></i> -->
+            <span class="material-symbols-outlined icons">
+              schedule
+              </span>
+            <span>Watch Later</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <!-- <i class="fa-solid fa-arrow-up-from-bracket" style="color: #bec3cb;"></i> -->
+            <span class="material-symbols-outlined icons">
+              download
+              </span>
+            <span>Downloads</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <!-- <i class="fa-regular fa-thumbs-up" style="color: #c5c8ce;"></i> -->
+            <span class="material-symbols-outlined icons">
+              thumb_up
+              </span>
+            <span>Liked Videos</span>
+          </a>
+          <hr>
+          <h4 class="different">Subscriptions</h4>
+            <a href="#" class="sidebar-item">
+              <img src="https://yt3.googleusercontent.com/M8HHa-4HpA1tPBYyCclC5JmODA7vx77XryhQe_0_4L9bCfpYwiDr7uJc3bOb9UZKJpogSC9OvA=s176-c-k-c0x00ffffff-no-rj" alt="" class="images"></i>
+              <span class="words">sheryians coding</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <img src="https://th.bing.com/th?id=ODL.392d14c80962fccc613e9e342d432f4f&w=80&h=80&c=1&vt=9&bgcl=a39477&r=0&o=6&pid=5.1" alt="" class="images">
+              <span class="words">code with harry</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <img src="https://yt3.ggpht.com/nhDLqeIgXMJBDIrX2bXavvHoWX0tsslDEh7k2xZ1P0W8b_CMRVigp2kxJubYEVwBcBlogZDe=s48-c-k-c0x00ffffff-no-rj" alt="" class="images">
+              <span class="words">Apna College</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <img src="https://yt3.ggpht.com/ytc/APkrFKaJOGSHtfG4ry1vXpAsGmc0ewTgk9dzNGD2sVs8GQk=s48-c-k-c0x00ffffff-no-rj" alt="" class="images">
+              <span class="words">English</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <img src="https://yt3.ggpht.com/vZFILuFswtjUIU5oRCc79rxRdML5A_c-D_6AdvgAAd0hqSrJihyJFkT_CTSjYwSrHgiPAAozebY=s176-c-k-c0x00ffffff-no-rj-mo" alt="" class="images">
+              <span class="words">ZEE News</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <img src="https://yt3.ggpht.com/ytc/APkrFKbwX-NLbwQUdVRX4Ln832NF8JsDqbSry96-SKJgGA=s68-c-k-c0x00ffffff-no-rj" alt="" class="images">
+              <span class="words">Star Sports</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <img src="https://yt3.ggpht.com/ytc/APkrFKZkZXoBCHoZnv2HohC8bbKiGO1F8l4PJqTpWZeI=s68-c-k-c0x00ffffff-no-rj" alt="" class="images">
+              <span class="words">Love Babbar</span>
+            </a>
+            <a href="#" class="sidebar-item" class="images">
+              <i class="fa-solid fa-circle-plus" style="color: #c9cdd4;"></i>
+              <span class="words">Browse Channels</span>
+            </a>
+
+            <hr>
+
+            <h4 class="different">Explore</h4>
+
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-fire-flame-curved" style="color: #cacdd3;"></i>
+              <span>Trending</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-suitcase" style="color: #bec3ca;"></i>
+              <span>Shopping</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-music" style="color: #bbbec4;"></i>
+              <span>Music</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-photo-film" style="color: #c0c3c8;"></i>
+              <span>Films</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-satellite-dish" style="color: #c0c5ce;"></i>
+              <span>Live</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-circle-plus" style="color: #c9cdd4;"></i>
+              <span>Gaming</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-newspaper" style="color: #c1c5cd;"></i>
+              <span>News</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-trophy" style="color: #bec5cf;"></i>
+              <span>Sport</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-lightbulb" style="color: #c4c8cf;"></i>
+              <span>Learning</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-dna" style="color: #c6cad2;"></i>
+              <span>Fashion and Beauty</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-podcast" style="color: #b3b6bc;"></i>
+              <span>Podcasts</span>
+            </a>
+
+            <hr>
+
+            <h4 class="different">More from youtube</h4>
+
+            <a href="#" class="sidebar-item">
+              <i class="fa-brands fa-youtube" style="color: #cc2424;"></i>
+              <span>Youtube Studio</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-brands fa-youtube" style="color: #cc2424;"></i>
+              <span>Youtube Music</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-brands fa-youtube" style="color: #cc2424;"></i>
+              <span>Youtube Kids</span>
+            </a>
+
+            <hr>
+
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-gear" style="color: #bfc3ca;"></i>
+              <span>Settings</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-regular fa-flag" style="color: #b0b4ba;"></i>
+              <span>Report History</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-question" style="color: #bcc2cd;"></i>
+              <span>Help</span>
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-triangle-exclamation" style="color: #bcc0c8;"></i>
+              <span>Send Feedback</span>
+            </a>
+
+            <hr>
+            <a href="#">
+              <p>About Press Copyright</p>
+              <p>Contact us Creator Advertise</p>
+              <p>Developers</p>
+            </a>
+
+            <a href="#">
+              <p>Terms  Privacy Policy & Safety</p>
+              <p>How Youtube works</p>
+              <p>Test new features</p>
+            </a>
+
+            <p>@ 2023 Google LLC</p>
+        </div>
+      </div>
+
+    
+    <!-- sidebar ends -->
+    <!-- main content starts -->
+    <div class="upperbar">
+      <div class="chips-wrapper">
+        <div class="chip all">
+          <p>All</p>
+        </div>
+        <div class="chip">
+          <p>HTML</p>
+        </div>
+        <div class="chip">
+          <p>CSS</p>
+        </div>
+        <div class="chip">
+          <p>Javascript</p>
+        </div>
+        <div class="chip">
+          <p>Responsive Design</p>
+        </div>
+        <div class="chip">
+          <p>UI</p>
+        </div>
+        <div class="chip">
+          <p>UX</p>
+        </div>
+        <div class="chip">
+          <p>C++</p>
+        </div>
+        <div class="chip">
+          <p>java</p>
+        </div>
+        <div class="chip">
+          <p>React</p>
+        </div>
+        <div class="chip">
+          <p>Music</p>
+        </div>
+        <div class="chip">
+          <p>NODEjs</p>
+        </div>
+        <div class="chip">
+          <p>C++</p>
+        </div>
+        <div class="chip">
+          <p>java</p>
+        </div>
+        <div class="chip">
+          <p>Design</p>
+        </div>
+        <div class="chip">
+          <p>Mern Stack</p>
+        </div>
+        <div class="chip">
+          <p>Queue</p>
+        </div>
+        <div class="chip">
+          <p>Designer</p>
+        </div>
+        <div class="chip">
+          <p>Stack</p>
+        </div>
+        <div class="chip">
+          <p>Mern Stack</p>
+        </div>
+        <div class="chip">
+          <p>Queue</p>
+        </div>
+        <div class="chip">
+          <p>Designer</p>
+        </div>
+        <div class="chip">
+          <p>Stack</p>
+        </div>
+      </div>
+      <div class="video-container" id="ytvideo">
+        <!-- <div class="video">
+          <a href="https://www.youtube.com/watch?v=5gYq6wVyCSM" target="_blank">
+          <img alt="" style="background-color: transparent;" class="thumbnail" src="https://i.ytimg.com/vi/5gYq6wVyCSM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCAVZdeS3PeD461SPT-dTIYa26X3A">
+          <div class="content">
+            <img src="https://yt3.ggpht.com/vZFILuFswtjUIU5oRCc79rxRdML5A_c-D_6AdvgAAd0hqSrJihyJFkT_CTSjYwSrHgiPAAozebY=s68-c-k-c0x00ffffff-no-rj" class="channel-icon">
+            <div class="info">
+              <h4 class="title">World Cup Final..GOOD NEWS</h4>
+              <p class="channel-name">ZEE NEWS</p>
+            </div>
+          </div>
+         </a>
+        </div> -->
+
+        <!-- <div class="dropdown" id="dropdown">
+          <div class="first">
+              <div class="logo">
+            <img
+              src="https://th.bing.com/th/id/OIP.Vy5PUdCk1nZpeE31MCa1pwHaHa?rs=1&pid=ImgDetMain"
+              alt=""
+              class="dabt"
+            />
+          </div>
+          <div class="details">
+            <span>ABC</span>
+            <span>@abcde</span>
+            <div class="manage">
+              <p style="color: rgb(54, 54, 250);">Manage your Google Account</p>
+            </div>
+          </div>
+      </div>
+      <div class="he">
+          <hr>
+      </div>
+      <div class="second">
+          <a href="#" class="hyper">
+              <i class="fa-regular fa-user" style="color: white;"></i>
+              <span>Your Channel</span>
+          </a>
+          <a href="#" class="hyper">
+              <i class="fa-brands fa-youtube" style="color: white;"></i>
+              <span>YouTube Studio</span>
+          </a>
+          <a href="#" class="hyper">
+              <i class="fa-solid fa-bell" style="color: white;"></i>
+              <span>Switch Account</span>
+          </a>
+          <a href="#" class="hyper">
+              <i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i>
+              <span>Sign out</span>
+          </a>
+          <hr>
+      </div>
+      <div class="third" class="hyper">
+          <a href="#">
+              <i class="fa-solid fa-p" style="color: red;"></i>
+              <span>Your Premium Benefits</span>
+          </a>
+          <a href="#" class="hyper">
+              <i class="fa-solid fa-dollar-sign" style="color:white;"></i>
+              <span>Purchases and memberships</span>
+          </a>
+          <a href="#" class="hyper">
+              <i class="fa-solid fa-users" style="color: white;"></i>
+              <span>Your data in YouTube</span>
+          </a>
+          <hr>
+      </div>
+      <div class="fourth">
+          <a href="#" class="hyper">
+              <i class="fa-regular fa-moon" style="color: white;"></i>
+              <span>Apperance: Dark</span>
+          </a>
+          <a href="#" class="hyper">
+              <i class="fa-solid fa-language" style="color: white;"></i>
+              <span>Language: British English</span>
+          </a>
+          <a href="#" class="hyper">
+              <i class="fa-regular fa-moon" style="color: white;"></i>
+              <span>Restricted Mode: Off</span>
+          </a>
+          <a href="#" class="hyper">
+              <i class="fa-solid fa-globe" style="color: white;"></i>
+              <span>Location: India</span>
+          </a>
+          <a href="#" class="hyper">
+              <i class="fa-regular fa-keyboard" style="color: white;"></i>
+              <span>Keyboard shortcuts</span>
+          </a>
+          <hr>
+      </div>
+      <div class="fifth">
+          <a href="#" class="hyper">
+          <i class="fa-solid fa-gear" style="color: white;"></i>
+          <span>Settings</span>
+      </a>
+          <hr>
+      </div>
+      <div class="sixth">
+          <a href="#" class="hyper">
+              <i class="fa-solid fa-circle-info" style="color: white;"></i>
+              <span>Help</span>
+          </a>
+          <a href="#" class="hyper">
+              <i class="fa-solid fa-exclamation" style="color: white;"></i>
+              <span>Send Feedback</span>
+          </a>
+      </div>
+      </div>  -->
+      </div>
+    </div>    
+
+    <div class="dropdown" id="dropdown">
+      <div class="first">
+          <div class="logo">
+        <img
+          src="https://th.bing.com/th/id/OIP.Vy5PUdCk1nZpeE31MCa1pwHaHa?rs=1&pid=ImgDetMain"
+          alt=""
+          class="dabt"
+        />
+      </div>
+      <div class="details">
+        <span>ABC</span>
+        <span>@abcde</span>
+        <div class="manage">
+          <p style="color: rgb(54, 54, 250);">Manage your Google Account</p>
+        </div>
+      </div>
+  </div>
+  <div class="he">
+      <hr>
+  </div>
+  <div class="second">
+      <a href="#" class="hyper">
+          <i class="fa-regular fa-user" style="color: white;"></i>
+          <span>Your Channel</span>
+      </a>
+      <a href="#" class="hyper">
+          <i class="fa-brands fa-youtube" style="color: white;"></i>
+          <span>YouTube Studio</span>
+      </a>
+      <a href="#" class="hyper">
+          <i class="fa-solid fa-bell" style="color: white;"></i>
+          <span>Switch Account</span>
+      </a>
+      <a href="#" class="hyper">
+          <i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i>
+          <span>Sign out</span>
+      </a>
+      <hr>
+  </div>
+  <div class="third" class="hyper">
+      <a href="#">
+          <i class="fa-solid fa-p" style="color: red;"></i>
+          <span>Your Premium Benefits</span>
+      </a>
+      <a href="#" class="hyper">
+          <i class="fa-solid fa-dollar-sign" style="color:white;"></i>
+          <span>Purchases and memberships</span>
+      </a>
+      <a href="#" class="hyper">
+          <i class="fa-solid fa-users" style="color: white;"></i>
+          <span>Your data in YouTube</span>
+      </a>
+      <hr>
+  </div>
+  <div class="fourth">
+      <a href="#" class="hyper">
+          <i class="fa-regular fa-moon" style="color: white;"></i>
+          <span>Apperance: Dark</span>
+      </a>
+      <a href="#" class="hyper">
+          <i class="fa-solid fa-language" style="color: white;"></i>
+          <span>Language: British English</span>
+      </a>
+      <a href="#" class="hyper">
+          <i class="fa-regular fa-moon" style="color: white;"></i>
+          <span>Restricted Mode: Off</span>
+      </a>
+      <a href="#" class="hyper">
+          <i class="fa-solid fa-globe" style="color: white;"></i>
+          <span>Location: India</span>
+      </a>
+      <a href="#" class="hyper">
+          <i class="fa-regular fa-keyboard" style="color: white;"></i>
+          <span>Keyboard shortcuts</span>
+      </a>
+      <hr>
+  </div>
+  <div class="fifth">
+      <a href="#" class="hyper">
+      <i class="fa-solid fa-gear" style="color: white;"></i>
+      <span>Settings</span>
+  </a>
+      <hr>
+  </div>
+  <div class="sixth">
+      <a href="#" class="hyper">
+          <i class="fa-solid fa-circle-info" style="color: white;"></i>
+          <span>Help</span>
+      </a>
+      <a href="#" class="hyper">
+          <i class="fa-solid fa-exclamation" style="color: white;"></i>
+          <span>Send Feedback</span>
+      </a>
+  </div>
+  </div> 
+    <script src="youtubevideos.js"></script>  
+  </body>
+</html>
+
+
+
+
