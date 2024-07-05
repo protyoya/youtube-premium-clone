@@ -208,8 +208,7 @@ hr{
   background-color: black;
   display: flex;
   padding-left: 13px;
-  /* border-top: 1px solid rgba(255,255,255,0.1);
-  border-bottom: 1px solid rgba(255,255,255,0.1); */
+  
 }
 
 .chips-wrapper::-webkit-scrollbar{
@@ -218,7 +217,6 @@ hr{
 .chip{
   margin: 12px 6px;
   padding: 6px 8px;
-  /* border: 1px solid rgba(255, 255, 255, 0.1); */
   background-color: rgba(255, 255, 255, 0.1);
   line-height: 1.0rem;
   border-radius: 8px;
@@ -248,8 +246,6 @@ hr{
   margin-top: 0px;
   margin-left: 5px;
   padding:5px;
-  /* display: grid;
-  grid-template-columns: repeat(4,25%); */
   grid-gap: 20px 5px;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -320,12 +316,7 @@ hr{
   color: white;
   padding: 3px 5px;
   align-items: center;
-  /* justify-content: center; */
 }
-
-/* .icon-item{
-  padding: 10px 4px;
-} */
 
 .side{
     background-color: black;
@@ -444,7 +435,7 @@ hr{
   cursor: pointer;
 }
 .dropdown hr{
-  /* border: 1px  solid  rgba(255,255,255,0.1); */
+
   margin: 0 0;
 }
 .dropdown i{
@@ -455,7 +446,6 @@ hr{
   line-height: 15px;
 }
 .he{
-  /* border: 0px  solid  rgba(255,255,255,0.1); */
   margin: 0 0;
 }
 .dropdown span{
